@@ -1368,12 +1368,12 @@ class AssistmentsDataSource(KaggleDataSource):
             self.kaggle_dataset_name,
             "2012-2013-data-with-predictions-4-final.csv"))
         
-        import ipdb;
-        ipdb.set_trace()
-        df[tableshift.datasets.ASSISTMENTS_FEATURES.names].to_feather(
-             os.path.join(self.cache_dir, "assistments-subset.feather"))
-        df = pd.read_feather(os.path.join(self.cache_dir,
-                                          "assistments-subset.feather"))
+        #import ipdb;
+        #ipdb.set_trace()
+        #df[tableshift.datasets.ASSISTMENTS_FEATURES.names].to_feather(
+        #     os.path.join(self.cache_dir, "assistments-subset.feather"))
+        #df = pd.read_feather(os.path.join(self.cache_dir,
+        #                                  "assistments-subset.feather"))
         logging.info("finished reading data")
         return df
 
